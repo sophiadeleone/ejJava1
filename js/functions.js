@@ -8,27 +8,28 @@ console.log(areaRect);
 
 function triangulo (base, altura) {
     let area= (base * altura)/2;
+    return area
  }
  
 const tria = triangulo(2,3);
 console.log(tria);
  
- 
-function largoDelArray (array) {
-    let numElems= array.lenght;
+
+function largoDelArray(array) {
+    let numElems = array.length;
     return numElems;
- }
- 
-const lararr = largoDelArray([1,2,3,4,5,6,7]);
+}
+
+const lararr = largoDelArray([1, 2, 3, 4, 5, 6, 7]);
 console.log(lararr);
- 
-function cantidadDeLetras (palabra) {
-    return palabra.lenght;
- }
+
+
+function cantidadDeLetras(palabra) {
+    return palabra.length;
+}
 
 const canlet = cantidadDeLetras("holis");
 console.log(canlet);
- 
  
 function dolarHoy (precio) {
     let precioUsd= (precio * 11000) + "usd";
