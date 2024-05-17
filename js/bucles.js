@@ -99,6 +99,6 @@ console.log("Presentación de los residentes:");
 for (let i = 0; i < got.length; i++) {
     let persona = got[i];
     let nombreCompleto = `${persona.nombre} ${persona.apellido}`;
-    let ciudad = persona.ciudad "desconocida";
+    let ciudad = persona.ciudad = "desconocida";
     console.log(`Soy ${nombreCompleto} de la ciudad ${ciudad}`);
 }
