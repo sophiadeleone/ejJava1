@@ -58,6 +58,10 @@ window.addEventListener('load', function() {
         bart.classList.contains("personaje-seleccionado");
     });
 
+    if( bart.classList.contains("personaje-seleccionado")) {
+        console.log("El elemento tiene la clase");
+    }
+
     slisa.addEventListener("dblckick", function() {
         lisa.classList.add("personaje-seleccionado");
         lisa.classList.remove("personaje-seleccionado");
