@@ -1,11 +1,6 @@
 let num1 = prompt("Ingresa el primer número:");
 let num2 = prompt("Ingresa el segundo número:");
 
-
-num1 = parseFloat(num1);
-num2 = parseFloat(num2);
-
-
 let respuesta = document.querySelector(".respuesta");
 
 if (num1 > num2) {
