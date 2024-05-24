@@ -15,9 +15,10 @@ if (pregAvan) {
         }
     let rutaImagen = prompt("Proporciona la URL de una imagen tuya:");
     let imgAvatar = document.querySelector("img.avatar");
-    if (imgAvatar && rutaImagen) {
+    if (imgAvatar) {
         imgAvatar.src = rutaImagen; /*esta bien esto? lo tuve q preguntar no estaba segura*/
     }
+
     let pelicula = {
         nombre: "",
         director: "",
