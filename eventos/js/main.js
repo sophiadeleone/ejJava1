@@ -53,71 +53,149 @@ window.addEventListener('load', function() {
     let verpers =document.querySelector()
     
     sbart.addEventListener("click", function() {
-        bart.classList.add("personaje-seleccionado");
-        bart.classList.remove("personaje-seleccionado");
-        bart.classList.contains("personaje-seleccionado");
+        if (bart.classList.contains("personaje-seleccionado")){
+            bart.classList.remove("personaje-seleccionado");
+        } else {
+            bart.classList.add("personaje-seleccionado");
+        }
     });
 
-    if( bart.classList.contains("personaje-seleccionado")) {
-        console.log("El elemento tiene la clase");
-    }
+    
 
-    slisa.addEventListener("dblckick", function() {
-        lisa.classList.add("personaje-seleccionado");
-        lisa.classList.remove("personaje-seleccionado");
+    slisa.addEventListener("dblclick", function() {
+        if (lisa.classList.contains("personaje-seleccionado")) {
+            lisa.classList.remove("personaje-seleccionado");
+        } else {
+            lisa.classList.add("personaje-seleccionado");
+        }
     });
 
     smarge.addEventListener("mouseover", function() {
-        marge.classList.add("personaje-seleccionado");
-        marge.classList.remove("personaje-seleccionado");
+        if (marge.classList.contains("personaje-seleccionado")) {
+            marge.classList.remove("personaje-seleccionado");
+        } else {
+            marge.classList.add("personaje-seleccionado");
+        }
     });
 
     smaggie.addEventListener("mouseout", function() {
-        maggie.classList.add("personaje-seleccionado");
-        maggie.classList.remove("personaje-seleccionado");
+        if (maggie.classList.contains("personaje-seleccionado")) {
+            maggie.classList.remove("personaje-seleccionado");
+        } else {
+            maggie.classList.add("personaje-seleccionado");
+        }
     });
 
     smilhouse.addEventListener("click", function() {
-        milhouse.classList.add("personaje-seleccionado");
-        milhouse.classList.remove("personaje-seleccionado");
+        if (milhouse.classList.contains("personaje-seleccionado")) {
+            milhouse.classList.remove("personaje-seleccionado");
+        } else {
+            milhouse.classList.add("personaje-seleccionado");
+        }
     });
 
-    sburns.addEventListener("dblckick", function() {
-        burns.classList.add("personaje-seleccionado");
-        burns.classList.remove("personaje-seleccionado");
+    sburns.addEventListener("dblclick", function() {
+        if (burns.classList.contains("personaje-seleccionado")) {
+            burns.classList.remove("personaje-seleccionado");
+        } else {
+            burns.classList.add("personaje-seleccionado");
+        }
     });
 
-    sbobPatinio.addEventListener("click", function() {
-        bobPatinio.classList.add("personaje-seleccionado");
-        bobPatinio.classList.remove("personaje-seleccionado");
+    sbobPatinio.addEventListener("dblclick", function() {
+        if (bobPatinio.classList.contains("personaje-seleccionado")) {
+            bobPatinio.classList.remove("personaje-seleccionado");
+        } else {
+            bobPatinio.classList.add("personaje-seleccionado");
+        }
     });
 
-    sflanders.addEventListener("click", function() {
-        flanders.classList.add("personaje-seleccionado");
-        flanders.classList.remove("personaje-seleccionado");
+    sflanders.addEventListener("mouseover", function() {
+        if (flanders.classList.contains("personaje-seleccionado")) {
+            flanders.classList.remove("personaje-seleccionado");
+        } else {
+            flanders.classList.add("personaje-seleccionado");
+        }
     });
 
-    sduffman.addEventListener("click", function() {
-        duffman.classList.add("personaje-seleccionado");
-        duffman.classList.remove("personaje-seleccionado");
+    sduffman.addEventListener("dblclick", function() {
+        if (duffman.classList.contains("personaje-seleccionado")) {
+            duffman.classList.remove("personaje-seleccionado");
+        } else {
+            duffman.classList.add("personaje-seleccionado");
+        }
     });
 
-    sgregory.addEventListener("click", function() {
-        gregory.classList.add("personaje-seleccionado");
-        gregory.classList.remove("personaje-seleccionado");
+    sgorgory.addEventListener("mouseover", function() {
+        if (gorgory.classList.contains("personaje-seleccionado")) {
+            gorgory.classList.remove("personaje-seleccionado");
+        } else {
+            gorgory.classList.add("personaje-seleccionado");
+        }
     });
     
     snelson.addEventListener("click", function() {
-        nelson.classList.add("personaje-seleccionado");
-        nelson.classList.remove("personaje-seleccionado");
+        if (nelson.classList.contains("personaje-seleccionado")) {
+            nelson.classList.remove("personaje-seleccionado");
+        } else {
+            nelson.classList.add("personaje-seleccionado");
+        }
     });
  
-    /* Capturar pesonajes + Asignarles a cada uno su evento correspondiente, 
-    así como también su funcionalidad */
-    
+    let boton = document.querySelector(".boton");
 
-    /* Asignarle evento a la variable boton */
-    let boton = ;
+    boton.addEventListener("click", function() {
+   
+        if (bart.classList.contains("personaje-seleccionado")) {
+            console.log(bart.querySelector("p").innerText);
+        }
+
+        if (lisa.classList.contains("personaje-seleccionado")) {
+            console.log(lisa.querySelector("p").innerText);
+        }
+
+        if (homero.classList.contains("personaje-seleccionado")) {
+            console.log(homero.querySelector("p").innerText);
+        }
+
+        if (marge.classList.contains("personaje-seleccionado")) {
+            console.log(marge.querySelector("p").innerText);
+        }
+
+        if (maggie.classList.contains("personaje-seleccionado")) {
+            console.log(maggie.querySelector("p").innerText);
+        }
+
+        if (milhouse.classList.contains("personaje-seleccionado")) {
+            console.log(milhouse.querySelector("p").innerText);
+        }
+
+        if (burns.classList.contains("personaje-seleccionado")) {
+            console.log(burns.querySelector("p").innerText);
+        }
+
+        if (bobPatinio.classList.contains("personaje-seleccionado")) {
+            console.log(bobPatinio.querySelector("p").innerText);
+        }
+
+        if (flanders.classList.contains("personaje-seleccionado")) {
+            console.log(flanders.querySelector("p").innerText);
+        }
+
+       
+        if (duffman.classList.contains("personaje-seleccionado")) {
+            console.log(duffman.querySelector("p").innerText);
+        }
+
+        
+        if (gorgory.classList.contains("personaje-seleccionado")) {
+            console.log(gorgory.querySelector("p").innerText);
+        }
+
+       
+        if (nelson.classList.contains("personaje-seleccionado")) {
+            console.log(nelson.querySelector("p").innerText);
+        }
+    });
  
- 
- }) 
+ });
