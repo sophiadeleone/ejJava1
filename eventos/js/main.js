@@ -1,5 +1,3 @@
-// completar las variables para que el programa funcione
-
 window.addEventListener('load', function() {
 
     //capturar HTML 
@@ -7,18 +5,18 @@ window.addEventListener('load', function() {
 
     titulo.addEventListener("mouseover", function() {
         let nombre = prompt( "¿CÓMO TE LLAMÁS?");
-    });
-    let saludo = document.querySelector("#saludo");
-    
-    let span = document.querySelector(".bienvenida span");
-    if (nombre) {
-        saludo.innerText+=("BIENVENID@" + nombre);
-        saludo.style.textTrasform = "uppercase";
-        titulo.style.display = "none";
-        span.style.display = "block";
-    } else {
-        saludo.innerText+=("BIENVENID@");
-    }
+        });
+        let saludo = document.querySelector("#saludo");
+        
+        let span = document.querySelector(".bienvenida span");
+        if (nombre) {
+            saludo.innerText+=("BIENVENID@" + nombre);
+            saludo.style.textTrasform = "uppercase";
+            titulo.style.display = "none";
+            span.style.display = "block";
+        } else {
+            saludo.innerText+=("BIENVENID@");
+        };
     let secbienvenida = document.querySelector(".bienvenida");
     let secpersonajes = document.querySelector(".personajes");
     span.addEventListener("click", function() {
