@@ -5,7 +5,6 @@ window.addEventListener('load', function() {
 
     titulo.addEventListener("mouseover", function() {
         let nombre = prompt( "¿CÓMO TE LLAMÁS?");
-        });
         let saludo = document.querySelector("#saludo");
         
         let span = document.querySelector(".bienvenida span");
@@ -17,6 +16,8 @@ window.addEventListener('load', function() {
         } else {
             saludo.innerText+=("BIENVENID@");
         };
+       
+    });
     let secbienvenida = document.querySelector(".bienvenida");
     let secpersonajes = document.querySelector(".personajes");
     span.addEventListener("click", function() {
