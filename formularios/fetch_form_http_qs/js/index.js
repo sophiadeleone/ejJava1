@@ -24,6 +24,7 @@ fetch(url)
                                 <a href="detalle.html?id=${info[i].id}">Ver más</a>
                             </article>`
         }
+        
         console.log(elementosLista);
 
         //Paso 3: reinviar datos actualizados al DOM

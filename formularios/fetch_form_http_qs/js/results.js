@@ -1,11 +1,11 @@
-let section = document.querySelector(".search-results");
+/* VOS BUSCAS ALGO EN EL FORM Y TE DA TODOS LOS ELEMENTOS QUE CONTENGAN ESO QEU BUSCASTE*/
 
 let qsResults = location.search;
 console.log(qsResults);
 let qstoResults = new URLSearchParams(qsResults);
 let nameResults = qstoResults.get("q");
 
-let url= `https://rickandmortyapi.com/api/character/?q=${nameResults}`
+let url= `https://rickandmortyapi.com/api/character/?name=${nameResults}`
 
 fetch(url)
 	//recibe la respuesta y la convierte en formato json
@@ -14,17 +14,19 @@ fetch(url)
     })
     //aca es donde vamos a poder trabajar cn los datos
 	.then(function(data){
-        console.log(data);
-        let infoR =data.results;
-        let imgR = document.querySelector(".imgResults");
-        let nameR = document.querySelector(".pNameResults");
-        let statusR = docuemnt.querySelector(".statusResults");
-
-        imgR.src = infoR.image;
-        nameR.innerText += infoR.name;
-        statusR.innerText += infoR.status;
-
-
+       
+        let section = document.querySelector(".search-results");
+        
+        for (let i=0; i<data.results.length; i++ ) {
+            let infoR =data.results[i];
+            console.log("la data.results es:", infoR);
+            section.innerHTML += `<article>
+                                        <img src="${infoR.image}" alt='imagen de ${infoR.name}' />
+                                        <p>Name: ${infoR.name}</p>
+                                        <p>Status:${infoR.status} </p>
+                                    </article>`
+        };
+        
     })
     //en caso de errores
 	.catch(function(error){
