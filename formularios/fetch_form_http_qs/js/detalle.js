@@ -30,11 +30,14 @@ fetch(url)
         console.log(error);
     })
 
+
+// PARA CARRITO
+
 //creo un array vacio para ir completando con los datos
 let carrito = [];
 
 //recupero datos del storage (cartItems es una propiedad qeu definimos en esta pagina mas adelante. si llega a no haber nada en el storage, te va a recuperar algo vacio)
-let recuperoStorage = localStorage.get("cartItems")
+let recuperoStorage = localStorage.getItem("cartItems");
 
 //pregunto si hay algo en el storage (pro q si no hay nada y parseo, me va a dar error)
 if (recuperoStorage != null) {
