@@ -1,3 +1,5 @@
+
+
 console.log("index.js");
 
 let url = "https://rickandmortyapi.com/api/character"

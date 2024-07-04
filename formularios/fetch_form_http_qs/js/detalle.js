@@ -1,7 +1,7 @@
 //Pasos para QS
 let qs = location.search; //Obtener la qs de la url aka "?clave=valor" en formato de cadena de texto
 let qsto = new URLSearchParams(qs); //Transformar la qs en un Objeto Literal
-let id = qsto.get('id'); //Obtener el dato de id del objeto literal
+let id = qsto.get('id'); //Obtener el dato de id del objeto literal aclaracion:metodo get es particular para query strings
 
 //Armar un nuevo fetch
 let url = `https://rickandmortyapi.com/api/character/${id}`
